@@ -14,8 +14,6 @@
   
 }
 .text-rainbow{
-	margin: 20px;
-	width: 200px;
 	background: linear-gradient(90deg, red, blue);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
