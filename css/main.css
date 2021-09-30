@@ -1,0 +1,38 @@
+.tiktok{
+    text-shadow:#ff00de -1px -2px  , #2addfd 2px 0px;
+}
+
+.blingbling{
+    text-shadow:0 0 5px white,0 0 10px #00FFFF,0 0 15px #7FFF00,0 0 20px white;
+}
+
+.dynamictiktok{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    animation: animate 1s linear infinite;
+  
+}
+.text-rainbow{
+	margin: 20px;
+	width: 200px;
+	background: linear-gradient(90deg, red, blue);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	
+}
+
+@keyframes animate {
+    0%, 100% {
+      text-shadow: -1.5px -1.5px 0 #0ff, 1.5px 1.5px 0 #f00;
+    }
+    25% {
+      text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+      text-shadow: 1.5px -1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+    75% {
+      text-shadow: -1.5px 1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+    }
+  }
