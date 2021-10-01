@@ -22,6 +22,10 @@
   margin: 0 auto;
 }
 
+.ban-reseiz{
+  resize: none;
+}
+
 @keyframes animate {
   0%,
   100% {
