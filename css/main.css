@@ -126,10 +126,14 @@
 
 .price-bar{
   text-align: center;
-  color: green;
+  color: black;
 }
 
-.operate-bar{
-  background: green;
-  color: white;
+.buy-bar{
+  color:green;
 }
+
+.sell-bar{
+  color:red;
+}
+
