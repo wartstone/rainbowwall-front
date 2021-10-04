@@ -123,3 +123,13 @@
     background-position: 0 0;
   }
 }
+
+.price-bar{
+  text-align: center;
+  color: green;
+}
+
+.operate-bar{
+  background: green;
+  color: white;
+}
