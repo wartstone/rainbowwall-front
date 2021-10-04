@@ -18,7 +18,7 @@
   -webkit-background-clip: text;
 }
 .card-center {
-  width: 61.8%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -92,6 +92,13 @@
 .btn-rainbow:hover:before {
   opacity: 1;
 }
+
+.btn-rainbow:focus-within{
+  outline: none;
+  background: white;
+
+}
+
 
 .btn-rainbow:after {
   z-index: -1;
