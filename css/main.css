@@ -93,12 +93,10 @@
   opacity: 1;
 }
 
-.btn-rainbow:focus-within{
+.btn-rainbow:focus-within {
   outline: none;
   background: white;
-
 }
-
 
 .btn-rainbow:after {
   z-index: -1;
@@ -124,16 +122,31 @@
   }
 }
 
-.price-bar{
+.price-bar {
   text-align: center;
   color: black;
 }
 
-.buy-bar{
-  color:green;
+.buy-bar {
+  color: green;
 }
 
-.sell-bar{
-  color:red;
+.sell-bar {
+  color: red;
 }
 
+.card > .operate-bar {
+  display: none; /*默认隐藏*/
+}
+
+.card > .price-bar {
+  display: none; /*默认隐藏*/
+}
+
+.card:hover > .operate-bar {
+  display: initial; /*当鼠标hover时展示*/
+}
+
+.card:hover > .price-bar {
+  display: initial; /*当鼠标hover时展示*/
+}
