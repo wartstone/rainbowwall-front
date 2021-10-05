@@ -17,6 +17,7 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .card-center {
   width: 80%;
   margin: 0 auto;
@@ -149,4 +150,16 @@
 
 .card:hover > .price-bar {
   display: initial; /*当鼠标hover时展示*/
+}
+
+.swap-bar {
+  width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .swap-bar {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
