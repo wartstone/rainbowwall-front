@@ -125,15 +125,7 @@
 
 .price-bar {
   text-align: center;
-  color: black;
-}
-
-.buy-bar {
-  color: green;
-}
-
-.sell-bar {
-  color: red;
+  color: rgb(136, 116, 0);
 }
 
 .card > .operate-bar {
@@ -164,7 +156,6 @@
   }
 }
 
-.a-noline:hover{
+.a-noline:hover {
   text-decoration: none;
 }
-
