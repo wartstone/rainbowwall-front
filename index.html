@@ -70,7 +70,24 @@
             <div class="card swap-bar shadow">
               <div class="card-body">
                 <form>
-                  <div class="form-group">
+                  
+                  <div class="form-group eth-form">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text text-rainbow uint">ETH</span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control eth-amount"
+                        placeholder="0"
+                        onkeyup="value=value.replace(/^\D*(\d*(?:\.\d{0,6})?).*$/g, '$1')"
+                        
+                      />
+                    </div>
+                    <small class="uint-balance"></small>
+                  </div>
+                  <div class="form-group row justify-content-center"><a href="#" class="changePosition"><li class="fas fa-exchange-alt"></li></a></div>
+                  <div class="form-group token-form">
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <button
@@ -83,25 +100,14 @@
                         </button>
                       </div>
                       <input
-                        type="number"
-                        class="form-control"
+                        type="text"
+                        class="form-control token-amount"
                         placeholder="0"
+                        onkeyup="value=value.replace(/^\D*(\d*(?:\.\d{0,6})?).*$/g, '$1')"
+                        disabled
                       />
                     </div>
-                    <small class="token-balance text-rainbow"></small>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text text-rainbow uint">ETH</span>
-                      </div>
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="0"
-                      />
-                    </div>
-                    <small class="uint-balance text-rainbow"></small>
+                    <small class="token-balance"></small>
                   </div>
                   <div class="row justify-content-center">
                     <button type="submit" class="btn btn-rainbow swap" disabled>
