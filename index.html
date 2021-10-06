@@ -52,9 +52,15 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <br />
-            <div class="card  card-center shadow">
-              <div class="card-header text-rainbow">
-                Paste the content you like, you will have the tokenId of Rainbow NFT
+            <div class="card card-center shadow">
+              <div class="card-header">
+                <div
+                  class="text-rainbow"
+                  data-toggle="tooltip"
+                  title="Paste the content you like, you will get the tokenId of Rainbow NFT, and you can get the transaction fee of the RWT of this tokenId"
+                >
+                  Paste the content you like
+                </div>
               </div>
               <div class="card-body">
                 <div class="form-group">
@@ -63,7 +69,10 @@
                     rows="2"
                   ></textarea>
                   <div class="row justify-content-end">
-                    <button class="btn btn-rainbow pasteButton" onclick="paste()">
+                    <button
+                      class="btn btn-rainbow pasteButton"
+                      onclick="paste()"
+                    >
                       <span class="text-rainbow">PASTE</span>
                     </button>
                   </div>
@@ -74,33 +83,47 @@
             <br />
 
             <div class="card swap-bar shadow" type="buy">
-              <div class="card-header text-rainbow">
-                SWAP
+              <div class="card-header">
+                <div
+                  class="text-rainbow"
+                  data-toggle="tooltip"
+                  title="You can buy or sell the RWT of the tokenId you specify, its price curve follows AMM, and the transaction fee belongs to the NFT owner of the tokenId"
+                >
+                  SWAP
+                </div>
               </div>
               <div class="card-body">
                 <form>
-                
                   <div class="form-group eth-form">
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text text-rainbow uint">ETH</span>
+                        <span class="input-group-text text-rainbow uint"
+                          >ETH</span
+                        >
                       </div>
                       <input
                         type="text"
                         class="form-control eth-amount"
                         placeholder="0"
                         onkeyup="value=value.replace(/^\D*(\d*(?:\.\d{0,6})?).*$/g, '$1')"
-                        
                       />
                     </div>
                     <small class="uint-balance"></small>
                   </div>
-                  <div class="form-group row justify-content-center"><a href="#" class="changePosition"><li class="fas fa-exchange-alt"></li></a></div>
+                  <div class="form-group row justify-content-center">
+                    <a href="#" class="changePosition"
+                      ><li class="fas fa-exchange-alt"></li
+                    ></a>
+                  </div>
                   <div class="form-group token-form">
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <button
-                          class="btn btn-outline-secondary selecToken text-rainbow"
+                          class="
+                            btn btn-outline-secondary
+                            selecToken
+                            text-rainbow
+                          "
                           type="button"
                           data-toggle="modal"
                           data-target="#tokenIdSearch"
@@ -119,7 +142,11 @@
                     <small class="token-balance"></small>
                   </div>
                   <div class="row justify-content-center">
-                    <button  class="btn btn-rainbow swap" onclick="swap()" disabled>
+                    <button
+                      class="btn btn-rainbow swap"
+                      onclick="swap()"
+                      disabled
+                    >
                       Enter an amount
                     </button>
                   </div>
