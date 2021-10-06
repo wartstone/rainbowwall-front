@@ -3,11 +3,10 @@
   id="tokenIdSearch"
   tabindex="-1"
   role="dialog"
-  aria-labelledby="exampleModalLabel"
   aria-hidden="true"
   data-backdrop="static"
 >
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h6 class="text-rainbow">Enter a token(Example:1)</h3>
@@ -35,6 +34,48 @@
           </div>
         </form>
       </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="afterPaste"
+  role="dialog"
+  aria-hidden="true"
+  data-backdrop="static"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+          <div class="text-rainbow modal-title  text-center" style="font-weight: bold;">
+            Congratulations!
+          </div>
+          <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+         <div class="text-rainbow text-center">Woot! You just created <span class="created-symbol"></span></div>
+      </br>
+      <img class="created-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHZpZXdCb3g9IjAgMCA1MDAgNTAwIj48L3N2Zz4="></img>
+    </br>
+      <div class="text-rainbow text-center tokenId"></div>
+      <div class="text-rainbow text-center">This is its tokenId</div>
+      <div class="created-tokenId text-rainbow text-center"></div>
+      </div>
+      <div class="modal-footer"  >
+          <div class="col btn-group justify-content-center"> 
+            <a  href="#" ><li class="fab fa-discord"></li></a>
+           </div>
+          <div class="col btn-group justify-content-center">
+            <a href="#" ><li class="fab fa-twitter" ></li></a>
+           </div>
+           <div class="col btn-group justify-content-center" data-toggle="tooltip" data-placement="top" title="Copy link">
+            <a onclick="clickToCopy()" href="#"><li class="fas fa-link" ></li></a>
+           </div>
+        </div>
+    </div>
     </div>
   </div>
 </div>
